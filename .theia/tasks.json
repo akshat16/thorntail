@@ -1,0 +1,17 @@
+{
+    "tasks": [
+        {
+            "type": "che",
+            "label": "maven build and run",
+            "command": "mvn thorntail:run",
+            "target": {
+                "workingDir": "${CHE_PROJECTS_ROOT}/akshat16-thorntail/demo",
+                "component": "maven"
+            },
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        }
+    ]
+}
